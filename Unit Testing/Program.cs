@@ -4,22 +4,24 @@ namespace Unit_Testing
 {
     class Program
     {
+        decimal Balance = 4000;
         static void Main(string[] args)
         {
             try
             {
                 Console.WriteLine("Welcome to Seattle Bank's ATM");
                 // 
-                //  AtmWoke();
+                 ATMWoke();
             }
 
             catch (Exception e)
             {
-
+                Console.WriteLine(e.Message);
             }
             finally
             {
 
+                Console.WriteLine("Have a nice day!");
             }
 
            
@@ -38,7 +40,7 @@ namespace Unit_Testing
                 Console.WriteLine("2 - Withdraw Money");
                 Console.WriteLine("3 - Deposit Money");
                 Console.WriteLine("4 - Exit ");
-                decimal Balance = 4000;
+               
 
                 // still need to fix things //
                // static void viewBalance()
@@ -50,6 +52,7 @@ namespace Unit_Testing
             catch (Exception e)
             {
 
+                Console.WriteLine(e.Message);
 
             }
         }
